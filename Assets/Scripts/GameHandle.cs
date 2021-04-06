@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class Game : MonoBehaviour
+public class GameHandle : MonoBehaviour
 {
     public Text Countdown;
     public Text PlayTime;
@@ -12,7 +12,7 @@ public class Game : MonoBehaviour
     public float PlaySecond = 5f;
 
     void Start(){
-        sec = Second + 2;
+        sec = Second + 1;
         PlayTime.text = ((int)PlaySecond).ToString();
         StartPrepareCountDown();
     }

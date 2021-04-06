@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 4897141356773652817}
   - component: {fileID: 4897141356773652818}
   m_Layer: 0
-  m_Name: watermelon
+  m_Name: Watermelon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
