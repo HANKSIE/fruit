@@ -589,7 +589,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fc61ceb09ddaa594e8eac1181562bcdb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Countdown: {fileID: 1772537385}
+  PrepareCountdown: {fileID: 1772537385}
   PlayTime: {fileID: 726758204}
   Second: 3
   PlaySecond: 5
