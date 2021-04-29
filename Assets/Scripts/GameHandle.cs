@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class GameHandle : MonoBehaviour
 {
@@ -13,10 +14,17 @@ public class GameHandle : MonoBehaviour
     public float Second = 3f;
     [Header("遊戲時間")]
     public float PlaySecond = 5f;
+    [Header("分數")]
+    public int score = 0;
+
+
+    public GameObject[] Fruits;
+    public FinalUpdate finUpdate; 
 
     private float sec; //準備時的倒數秒數
 
     void Start(){
+        Debug.Log("Screen Width : " + Screen.width);
         sec = Second + 1; //多加一秒，為了讓提示字串顯示一秒避免直接顯示倒數數字
         PlayTime.text = ((int)PlaySecond).ToString();
         StartPrepareCountDown();
@@ -62,12 +70,23 @@ public class GameHandle : MonoBehaviour
     /// </summary>
     void PlayCountDown(){
         if(PlaySecond > 0){
+            Camera camera = GameObject.Find("Main Camera").GetComponent<Camera>();
+            Debug.Log(camera.pixelWidth);
             PlaySecond -= 1;
             PlayTime.text = ((int)PlaySecond).ToString();
+            Instantiate(Fruits[Random.Range(0,Fruits.Length-1)],new Vector3(Random.Range(1,27),13,0), Quaternion.identity);
             return;
+        }else{
+            DontDestroyOnLoad(GameObject.Find("GameManager"));
+            SceneManager.LoadScene(2);
         }
 
         CancelInvoke("PlayCountDown"); //取消PlayCountDown function調用
     }
+
+    public void plus(){
+        score+=10;
+    }
+
 
 }

@@ -283,11 +283,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4863559604746942730, guid: d3b2c3505c26e184c9f817bef79c24c9, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 3.1309786
+      value: 21.99
       objectReference: {fileID: 0}
     - target: {fileID: 4863559604746942730, guid: d3b2c3505c26e184c9f817bef79c24c9, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 3.9148462
+      value: 11.67
       objectReference: {fileID: 0}
     - target: {fileID: 4863559604746942730, guid: d3b2c3505c26e184c9f817bef79c24c9, type: 3}
       propertyPath: m_LocalPosition.z
@@ -415,11 +415,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4897141356773652819, guid: 8959b91cd614c4f4bbf5ada51c25c46b, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -4.546504
+      value: 7.54
       objectReference: {fileID: 0}
     - target: {fileID: 4897141356773652819, guid: 8959b91cd614c4f4bbf5ada51c25c46b, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 3.6040168
+      value: 11.4
       objectReference: {fileID: 0}
     - target: {fileID: 4897141356773652819, guid: 8959b91cd614c4f4bbf5ada51c25c46b, type: 3}
       propertyPath: m_LocalPosition.z
@@ -572,7 +572,7 @@ GameObject:
   - component: {fileID: 1476718747}
   m_Layer: 0
   m_Name: GameManager
-  m_TagString: Untagged
+  m_TagString: GameManager
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -593,6 +593,18 @@ MonoBehaviour:
   PlayTime: {fileID: 726758204}
   Second: 3
   PlaySecond: 5
+  score: 0
+  FinalScore: {fileID: 0}
+  Fruits:
+  - {fileID: 5831202252035354095, guid: 7b10eea2d0fa0ea46828040f00f6c62d, type: 3}
+  - {fileID: 5495756493720820165, guid: 5d4b1f66f385a8549b2a9e3d50dc480e, type: 3}
+  - {fileID: 4863559604746942728, guid: d3b2c3505c26e184c9f817bef79c24c9, type: 3}
+  - {fileID: 5187654654213737414, guid: 49fb73e31166022448fdde0207d02b0a, type: 3}
+  - {fileID: 4821132390287146902, guid: c555dfb25c8ebcc499453272090e795e, type: 3}
+  - {fileID: 5960988940036755903, guid: 06043067a88aa7e4db1800ab0d738c3d, type: 3}
+  - {fileID: 7270090641346957960, guid: 54c2c3a38aff3fd4980aea33cc37d65d, type: 3}
+  - {fileID: 1596251080880825453, guid: 5e2a73d49694a714cac371cd5bfe1838, type: 3}
+  - {fileID: 4897141356773652829, guid: 8959b91cd614c4f4bbf5ada51c25c46b, type: 3}
 --- !u!4 &1476718748
 Transform:
   m_ObjectHideFlags: 0
@@ -818,7 +830,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 5
+  orthographic size: 6.075074
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -842,7 +854,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2140796208}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -10}
+  m_LocalPosition: {x: 14, y: 6, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
