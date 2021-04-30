@@ -76,12 +76,11 @@ public class GameHandle : MonoBehaviour
             PlayTime.text = ((int)PlaySecond).ToString();
             Instantiate(Fruits[Random.Range(0,Fruits.Length-1)],new Vector3(Random.Range(1,27),13,0), Quaternion.identity);
             return;
-        }else{
-            DontDestroyOnLoad(GameObject.Find("GameManager"));
-            SceneManager.LoadScene(2);
         }
-
+        
+        DontDestroyOnLoad(gameObject);
         CancelInvoke("PlayCountDown"); //取消PlayCountDown function調用
+        SceneManager.LoadScene(2);
     }
 
     public void plus(){

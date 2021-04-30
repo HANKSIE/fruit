@@ -8,7 +8,7 @@ public class FinalUpdate : MonoBehaviour{
     [Header("最後分數Text UI")]
     public Text Score;
 
-    public void start(){
+    void Start(){
         GameHandle manager = GameObject.Find("GameManager").GetComponent<GameHandle>();
         Debug.Log(manager.score);
         Score.text = ((int)manager.score).ToString();
