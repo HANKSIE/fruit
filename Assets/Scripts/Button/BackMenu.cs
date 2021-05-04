@@ -8,5 +8,6 @@ public class BackMenu : MonoBehaviour
    public void ClickHandle()
     {
         SceneManager.LoadScene(0);
+        Destroy(GameObject.Find("GameManager"));
     }
 }
