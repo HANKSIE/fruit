@@ -13,7 +13,7 @@ public class GameHandle : MonoBehaviour
     [Header("倒數秒數")]
     public float Second = 3f;
     [Header("遊戲時間")]
-    public float PlaySecond = 5f;
+    public float PlaySecond = 20f;
     [Header("分數")]
     public int score = 0;
 

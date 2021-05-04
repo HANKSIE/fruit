@@ -10,10 +10,10 @@ public class FinalUpdate : MonoBehaviour{
 
     void Start(){
         GameHandle manager = GameObject.Find("GameManager").GetComponent<GameHandle>();
-        Debug.Log(manager.score);
+        // Debug.Log(manager.score);
         Score.text = ((int)manager.score).ToString();
-        Debug.Log(Score.text);
-        Debug.Log(manager.score);
+        // Debug.Log(Score.text);
+        // Debug.Log(manager.score);
     }
 
 }

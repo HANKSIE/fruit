@@ -7,20 +7,26 @@ using UnityEngine;
 
 public class Fruit : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
+    // void Update()
+    // {
+    //     RaycastHit hit = new RaycastHit();
+    //     Debug.Log();
+    //     for (int i = 0; i < Input.touchCount; i++) {
+    //         Ray ray = GameObject.Find("Main Camera").GetComponent<Camera>().ScreenPointToRay(Input.GetTouch(i).position);
+    //         if (Input.GetTouch(i).phase.Equals(TouchPhase.Began)) {
+    //             if (Physics.Raycast(ray, out hit)) {
+    //                 DestroyMe();
+    //             }
+    //        }
+    //    }
+    // }
 
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+    void DestroyMe(){
+        Destroy(gameObject);
+        GameObject.Find("GameManager").GetComponent<GameHandle>().plus();
     }
 
     void OnMouseDown() {
-        Destroy(gameObject);
-        GameObject.Find("GameManager").GetComponent<GameHandle>().plus();
+        DestroyMe();
     }
 }
